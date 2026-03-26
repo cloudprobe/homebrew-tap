@@ -5,21 +5,21 @@
 class Devrecap < Formula
   desc "Know what you actually did today, including your AI sessions"
   homepage "https://github.com/cloudprobe/devrecap"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.3/devrecap_0.1.3_darwin_amd64.tar.gz"
-      sha256 "2c23d410d6530cb1e4854644ebaca5f8d1ee681a6acf4dec86cd478a255aeb9c"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.2.0/devrecap_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a2b8873dfd5286b42a8d3d18ed7ad44e47363ac5cdf73cdfbbc3c2dc79fa79a7"
 
       define_method(:install) do
         bin.install "devrecap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.3/devrecap_0.1.3_darwin_arm64.tar.gz"
-      sha256 "1282ddc248f446281c56755f9ff42b560dc92e80a5fa90f0b4778c24c2614d78"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.2.0/devrecap_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0e249bb65f1fb17bffbf90ef44a4ad1ac7ae45d43bcd025d0983ad76269d90cd"
 
       define_method(:install) do
         bin.install "devrecap"
@@ -29,15 +29,15 @@ class Devrecap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.3/devrecap_0.1.3_linux_amd64.tar.gz"
-      sha256 "4e657132fb5bf637853cf816711f1552653e245752dbf02b34f1e48fec850341"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.2.0/devrecap_0.2.0_linux_amd64.tar.gz"
+      sha256 "5c2ccc12840658f3acd9a8b3ffd807463285e54ddfdbb6e88b5809ff298491ab"
       define_method(:install) do
         bin.install "devrecap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.3/devrecap_0.1.3_linux_arm64.tar.gz"
-      sha256 "35b6a30e61437bee9d8b5ca9ed670c2d84131861d46418abdb42dae45f220a03"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.2.0/devrecap_0.2.0_linux_arm64.tar.gz"
+      sha256 "7dd47b1e85e33f62aaa233a17e55a2d8f9eec10c7223404363e9396282e7aa1c"
       define_method(:install) do
         bin.install "devrecap"
       end
