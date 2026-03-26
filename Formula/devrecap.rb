@@ -1,30 +1,30 @@
 class Devrecap < Formula
   desc "Know what you actually did today, including your AI sessions"
   homepage "https://github.com/cloudprobe/devrecap"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.0/devrecap_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8d521a60dd7e1051bee76c179700c0f66461e6e1e9e842d7e772e2b3b9de3f69"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.1/devrecap_0.1.1_darwin_arm64.tar.gz"
+      sha256 "aeff08ca702c4a451a33a76c820c7d4e431c18900fc0fe32efeb2d818759fc1a"
     end
 
     on_intel do
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.0/devrecap_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c4cd4b050dfdd6f41fdfb8cfb1423803cad125d883ffccb74832e1af62583f00"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.1/devrecap_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1d6e66d4ef0485ba49ec22c7bdf3d5dcddac5d705f0bdfdff64afa5cdb76ce8e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.0/devrecap_0.1.0_linux_arm64.tar.gz"
-      sha256 "3772a468fb7bd72709f4fdec1d49ba79d9116deddfffc8bf4ad959eb7549aac4"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.1/devrecap_0.1.1_linux_arm64.tar.gz"
+      sha256 "8c316497b9f8e1a0a506daffa96a8a503b38d8bcb72cb38f05e6bb05978fc402"
     end
 
     on_intel do
-      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.0/devrecap_0.1.0_linux_amd64.tar.gz"
-      sha256 "0fab65b3ae9d39bd122fed46606cca6bafe86f97ecb36fd70192a3e3f5b9c329"
+      url "https://github.com/cloudprobe/devrecap/releases/download/v0.1.1/devrecap_0.1.1_linux_amd64.tar.gz"
+      sha256 "92f44e896ec1fdce1146ebe122ab6f37bbdc95cc2dee39943bf235d4b31cabf4"
     end
   end
 
