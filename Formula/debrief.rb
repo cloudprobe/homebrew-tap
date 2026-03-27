@@ -5,21 +5,21 @@
 class Debrief < Formula
   desc "Know what you actually did today — git commits, AI sessions, one command"
   homepage "https://github.com/cloudprobe/debrief"
-  version "0.1.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.1.0/debrief_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cdaa7c622f5688f958dc9a8a40d9bc8a618568d149fbf495b10e88abb630c006"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.4.0/debrief_0.4.0_darwin_amd64.tar.gz"
+      sha256 "599572d7e983a536bf62495790f7362b1c95937d68e217f3155dd6f32e0cef9a"
 
       define_method(:install) do
         bin.install "debrief"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.1.0/debrief_0.1.0_darwin_arm64.tar.gz"
-      sha256 "be5bafd8d85d98067659ed7ba8f5a0701829bec98d29f5b0b4559dbbd5b549d4"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.4.0/debrief_0.4.0_darwin_arm64.tar.gz"
+      sha256 "50ea0a0b257d9bb9e9de30f1ca7d6cc639483695bb62f237e3dc114bb21f1c89"
 
       define_method(:install) do
         bin.install "debrief"
@@ -29,15 +29,15 @@ class Debrief < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.1.0/debrief_0.1.0_linux_amd64.tar.gz"
-      sha256 "2f279b6e311ed35667c44f6115906997821d836601f6333375c506d7c0c98b92"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.4.0/debrief_0.4.0_linux_amd64.tar.gz"
+      sha256 "68bd7fc81079cbfcbeb59993334bfe8320c48e19aac617843b920b2ea37e424b"
       define_method(:install) do
         bin.install "debrief"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.1.0/debrief_0.1.0_linux_arm64.tar.gz"
-      sha256 "3d36408c1f6c6044767b6a654d47b92170e7614f18fe95755480d0890da1d5d9"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.4.0/debrief_0.4.0_linux_arm64.tar.gz"
+      sha256 "e0782927f7646c571e7379294912344a0d608baec6fbd4280f6934e836c61cff"
       define_method(:install) do
         bin.install "debrief"
       end
