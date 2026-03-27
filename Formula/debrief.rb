@@ -5,45 +5,41 @@
 class Debrief < Formula
   desc "Know what you actually did today — git commits, AI sessions, one command"
   homepage "https://github.com/cloudprobe/debrief"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.0/debrief_0.5.0_darwin_amd64.tar.gz"
-      sha256 "1ba5b4d41de4289d757764b14b75f2d64a34d7cc18198b9b955b3e50aab7ee67"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.1/debrief_0.5.1_darwin_amd64.tar.gz"
+      sha256 "7e2e56b803a04a70527655c12df505ca1faf64c0dee33e16247d978fffc88fec"
 
       define_method(:install) do
         bin.install "debrief"
-        generate_completions_from_executable(bin/"debrief", "completion")
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.0/debrief_0.5.0_darwin_arm64.tar.gz"
-      sha256 "0d15e487e05fe9a0b249f7478958991bbdf16674538250e901988dda835eb0f4"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.1/debrief_0.5.1_darwin_arm64.tar.gz"
+      sha256 "adcecb7d69f65f13df60bdadce6d2e2297cd8e7334dec464f8292511999370ac"
 
       define_method(:install) do
         bin.install "debrief"
-        generate_completions_from_executable(bin/"debrief", "completion")
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.0/debrief_0.5.0_linux_amd64.tar.gz"
-      sha256 "1dee0b0a9d6dd20e7d7cd1d4feff8ec0b9976e2eef349cd906020f1a82df1b1c"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.1/debrief_0.5.1_linux_amd64.tar.gz"
+      sha256 "7fef25efaf31d0136120b539f419383d32278308d00621380576eae042d60471"
       define_method(:install) do
         bin.install "debrief"
-        generate_completions_from_executable(bin/"debrief", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.0/debrief_0.5.0_linux_arm64.tar.gz"
-      sha256 "805a1d25eca02047a2eec19c2b0280141989d63738654984788279274156aedb"
+      url "https://github.com/cloudprobe/debrief/releases/download/v0.5.1/debrief_0.5.1_linux_arm64.tar.gz"
+      sha256 "5eb889b6bd8df65d67444829b6166e0d136a8a8e5ac58115d213bf15c054e5f8"
       define_method(:install) do
         bin.install "debrief"
-        generate_completions_from_executable(bin/"debrief", "completion")
       end
     end
   end
